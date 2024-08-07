@@ -7,11 +7,15 @@
 }
 
 .active-link span {
-    color: #00bcd4;
+    color: #003B65 ;
+    background-color: #fff;
+    padding: 0.5em;
 }
 
 a:hover {
-    border-bottom: 2px solid #00bcd4;
+    background-color: #fff;
+    color: #003B65 ;
+    padding: 0.5em;
 }
 
 .nav-active-white {
