@@ -1,0 +1,37 @@
+.nav-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    z-index: 80;
+}
+
+.active-link span {
+    color: #00bcd4;
+}
+
+a:hover {
+    border-bottom: 2px solid #00bcd4;
+}
+
+.nav-active-white {
+    background-color: #fff;
+    box-shadow: 5px -1px 12px -5px grey;
+    color: black !important;
+}
+
+.nav-active-black {
+    background-color: black;
+    box-shadow: 5px -1px 12px -5px grey;
+    color: #fff !important;
+}
+
+.fill-current {
+    background-color: #fff;
+}
+
+.logo-class {
+    width: '80px';
+    border-radius: '10px';
+    height: '50px';
+}

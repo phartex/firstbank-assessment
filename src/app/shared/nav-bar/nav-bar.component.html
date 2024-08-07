@@ -1,0 +1,94 @@
+<div class="nav-container shadow-lg py-1 bg-[#003B65]">
+    <header class="lg:px-10 px-6  flex flex-wrap items-center lg:py-0 ">
+      <div class="flex-1 flex justify-between items-center">
+        <a id="logo-light" class="">
+          <img src="assets/images/BPP5.png" style="width:90px; height:60px" class="h-10 inline logo-class" alt="" />
+        </a>
+        <a id="logo-dark">
+          <img src="assets/images/BPP5.png" style="width:90px; height:60px" class="h-10 inline logo-class" alt="" />
+        </a>
+      </div>
+      <div (click)="toggle()">
+        <ng-container *ngIf="!show; else hideHamBurger">
+          <label class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900"
+              xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+              <title>menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </label>
+          <input class="hidden" type="checkbox" />
+        </ng-container>
+        <ng-template #hideHamBurger>
+          <div class="fill-current">
+            <img src="assets/images/close1.svg" alt="">
+            <input class="hidden" type="checkbox" />
+          </div>
+  
+        </ng-template>
+  
+      </div>
+  
+  
+      <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+        <nav>
+          <ul class="lg:flex items-center justify-between text-base pt-4 lg:pt-0 font-normal">
+            <li class="cursor-pointer"><a routerLink="/home" routerLinkActive="active-link"
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent text-sm">
+                <span>HOME</span></a></li>
+            <li class="cursor-pointer"><a routerLink="/about" routerLinkActive="active-link"
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent text-sm"> <span>ABOUT
+                  US</span></a></li>
+            <li class="cursor-pointer"><a routerLink="/projects" routerLinkActive="active-link"
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent text-sm">
+                <span>COMMUNITIES</span></a></li>
+            <li class="cursor-pointer"><a routerLink="/bpp-news" routerLinkActive="active-link"
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent text-sm"> <span>BPP
+                  NEWS</span></a></li>
+            <li class="cursor-pointer"><a routerLink="/contact" routerLinkActive="active-link"
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent text-sm">
+                <span>CONTACT</span></a></li>
+  
+            <li class="cursor-pointer"><a routerLink="/what-we-do" routerLinkActive="active-link"
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent  text-sm">
+                <span>WHAT WE DO</span></a></li>
+  
+          </ul>
+        </nav>
+  
+  
+      </div>
+      <div>
+  
+      </div>
+  
+      <div class="lg:flex lg:items-center lg:w-auto w-full" *ngIf="show">
+        <nav class="">
+          <ul class="lg:flex items-center justify-between text-base pt-4 lg:pt-0">
+            <li class="cursor-pointer"><a routerLink="/home" routerLinkActive="active-link"
+                class="nav-link lg:p-4 py-3 px-0 block border-b-2 border-transparent   "><span>Home</span></a>
+            </li>
+            <li class="cursor-pointer"><a routerLink="/about" routerLinkActive="active-link"
+                class="nav-link lg:p-4 py-3 px-0 block border-b-2 border-transparent  "><span>About
+                  us</span></a></li>
+            <li class="cursor-pointer"><a routerLink="/projects" routerLinkActive="active-link"
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent  "><span>Communites</span></a>
+            </li>
+            <li class="cursor-pointer"><a routerLink="/bpp-news" routerLinkActive="active-link"
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent  "> <span>Bpp
+                  news</span></a></li>
+            <li class="cursor-pointer"><a routerLink="/contact" routerLinkActive="active-link"
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent  ">
+                <span>contact</span></a></li>
+            <li class="cursor-pointer"><a routerLink="/what-we-do" routerLinkActive="active-link"
+                class="lg:p-4 py-3 px-0 block border-b-2 border-transparent  ">
+                <span>what we do</span></a></li>
+  
+          </ul>
+        </nav>
+  
+  
+      </div>
+  
+    </header>
+  
+  </div>
