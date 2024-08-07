@@ -7,6 +7,7 @@ import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FbnPodcastComponent } from './pages/fbn-podcast/fbn-podcast.component';
+import { EconomicComponent } from './pages/economic/economic.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FbnPodcastComponent } from './pages/fbn-podcast/fbn-podcast.component';
     NavBarComponent,
     FooterComponent,
     HomePageComponent,
-    FbnPodcastComponent
+    FbnPodcastComponent,
+    EconomicComponent
   ],
   imports: [
     BrowserModule,
