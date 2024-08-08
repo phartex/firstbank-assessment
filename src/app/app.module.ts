@@ -9,6 +9,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FbnPodcastComponent } from './pages/fbn-podcast/fbn-podcast.component';
 import { EconomicComponent } from './pages/economic/economic.component';
 import { FeaturedCardComponent } from './pages/featured-card/featured-card.component';
+import { FirstMonieCardComponent } from './pages/first-monie-card/first-monie-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FeaturedCardComponent } from './pages/featured-card/featured-card.compo
     HomePageComponent,
     FbnPodcastComponent,
     EconomicComponent,
-    FeaturedCardComponent
+    FeaturedCardComponent,
+    FirstMonieCardComponent
   ],
   imports: [
     BrowserModule,
