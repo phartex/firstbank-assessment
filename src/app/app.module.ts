@@ -8,6 +8,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FbnPodcastComponent } from './pages/fbn-podcast/fbn-podcast.component';
 import { EconomicComponent } from './pages/economic/economic.component';
+import { FeaturedCardComponent } from './pages/featured-card/featured-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EconomicComponent } from './pages/economic/economic.component';
     FooterComponent,
     HomePageComponent,
     FbnPodcastComponent,
-    EconomicComponent
+    EconomicComponent,
+    FeaturedCardComponent
   ],
   imports: [
     BrowserModule,
