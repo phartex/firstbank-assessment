@@ -6,11 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-  // background: url(/assets/fbn-personal2.png);
   backgroundImages = [
     '/assets/fbn-personal2.png',
-    '/assets/fbn-personal2.png',
-    ''
+    '/assets/video2.png',
+    'assets/man.png'
   ];
 
   currentIndex = 0;
