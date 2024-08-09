@@ -18,11 +18,23 @@ export class HomePageComponent implements OnInit {
 
   touchStartX = 0;
   touchEndX = 0;
+  loading: boolean = true;
 
 
   constructor() { }
 
   ngOnInit(): void {
+    this.callSetTimeOut();
+  };
+
+  callSetTimeOut() {
+    setTimeout(() => {
+      this.loading = true;
+      
+      setTimeout(() => {
+        this.loading = false;
+      }, 1000);
+    }, 1000);
   }
   onTouchStart(event: TouchEvent) {
     this.touchStartX = event.changedTouches[0].screenX;

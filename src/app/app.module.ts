@@ -10,6 +10,7 @@ import { FbnPodcastComponent } from './pages/fbn-podcast/fbn-podcast.component';
 import { EconomicComponent } from './pages/economic/economic.component';
 import { FeaturedCardComponent } from './pages/featured-card/featured-card.component';
 import { FirstMonieCardComponent } from './pages/first-monie-card/first-monie-card.component';
+import { LoaderComponent } from './shared/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FirstMonieCardComponent } from './pages/first-monie-card/first-monie-ca
     FbnPodcastComponent,
     EconomicComponent,
     FeaturedCardComponent,
-    FirstMonieCardComponent
+    FirstMonieCardComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

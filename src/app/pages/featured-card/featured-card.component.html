@@ -1,8 +1,9 @@
-<div class="container mx-auto py-8 px-5 md:px-12">
+<div class="container mx-auto py-8 px-5 md:px-12" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
     <p class="text-[#003B65]">BLOG</p>
     <p class="text-4xl font-medium mb-4 text-[#003B65]">Featured</p>
     
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" >
       <div *ngFor="let post of paginatedPosts" class="bg-white rounded-lg shadow-lg p-4">
         <img [src]="post.image" [alt]="post.title" class="w-full h-48 object-cover mb-4">
         <p class="text-center font-medium">{{ post.title }}</p>

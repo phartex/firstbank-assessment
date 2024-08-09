@@ -1,129 +1,135 @@
-<section>
 
-</section>
-<div class="bg-[#ECEFF1]">
-    <div class="block md:flex justify-between items-center mt-14 px-14 py-5 ">
-        <div class="w-full md:w-3/5">
-            <a id="logo-light" class="">
-                <img src="assets/firstbanklogo2.png" style="width:90px; height:60px" class="h-10 inline logo-class"
-                    alt="" />
-            </a>
+<ng-container *ngIf="!loading; else loader">
+    <div  class="bg-[#ECEFF1]">
+        <div class="block md:flex justify-between items-center mt-14 px-14 py-5 ">
+            <div class="w-full md:w-3/5">
+                <a id="logo-light" class="">
+                    <img src="assets/firstbanklogo2.png" style="width:90px; height:60px" class="h-10 inline logo-class"
+                        alt="" />
+                </a>
+            </div>
+            <div
+                class="w-full md:w-2/5 flex justify-between gap-3 md:gap-3 items-center text-center md:text-left text-[#003B65] font-medium">
+                <div class="cursor-pointer hover:border-b-2 border-b-yellow-500">
+                    <p class="text-sm">CATEGORIES</p>
+                </div>
+                <div class="cursor-pointer hover:border-b-2 border-b-yellow-500">
+                    <p class="text-sm">BLOG</p>
+                </div>
+                <div class="cursor-pointer hover:border-b-2 border-b-yellow-500">
+                    <p class="text-sm">SUBSCRIBE</p>
+                </div>
+                <div class="cursor-pointer hover:border-b-2 border-b-yellow-500">
+                    <p class="text-sm">CONTACT</p>
+                </div>
+            </div>
         </div>
-        <div
-            class="w-full md:w-2/5 flex justify-between gap-3 md:gap-3 items-center text-center md:text-left text-[#003B65] font-medium">
-            <div class="cursor-pointer hover:border-b-2 border-b-yellow-500">
-                <p class="text-sm">CATEGORIES</p>
-            </div>
-            <div class="cursor-pointer hover:border-b-2 border-b-yellow-500">
-                <p class="text-sm">BLOG</p>
-            </div>
-            <div class="cursor-pointer hover:border-b-2 border-b-yellow-500">
-                <p class="text-sm">SUBSCRIBE</p>
-            </div>
-            <div class="cursor-pointer hover:border-b-2 border-b-yellow-500">
-                <p class="text-sm">CONTACT</p>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- <div class="container-class">
-        <div class="pt-28 px-10 ">
-            <p class="text-3xl md:text-4xl font-medium mt-5 text-white">FBN PODCAST</p>
-            <p class="text-xl text-white md:text-xl pt-5 font-medium">Enjoy amazing discussions about life</p>
-            <p class="text-xl text-white md:text-xl font-medium">solutions that will transform</p>
-            <p class="text-xl text-white md:text-xl font-medium">your everyday on the go</p>
     
-        </div>
-    </div> -->
-
-    <div class="relative container-class h-screen bg-cover bg-center"
-        [style.background-image]="'url(' + backgroundImages[currentIndex] + ')'" (touchstart)="onTouchStart($event)"
-        (touchend)="onTouchEnd($event)">
-        <div class="absolute inset-0 flex items-center justify-start ">
-            <div class="bg-black bg-opacity-50 p-5 text-center md:text-left w-full  md:w-auto">
+    
+        <!-- <div class="container-class">
+            <div class="pt-28 px-10 ">
                 <p class="text-3xl md:text-4xl font-medium mt-5 text-white">FBN PODCAST</p>
                 <p class="text-xl text-white md:text-xl pt-5 font-medium">Enjoy amazing discussions about life</p>
                 <p class="text-xl text-white md:text-xl font-medium">solutions that will transform</p>
                 <p class="text-xl text-white md:text-xl font-medium">your everyday on the go</p>
+        
             </div>
-
-
-        </div>
-
-        <div class="px-10 text-center w-full lg:px-96 mx-auto flex justify-between mt-72 md:mt-14 absolute top-[300px]">
-            <div (click)="changeBackground(0)"
-                [ngClass]="{'bg-white': activeLine === 1, 'bg-gray-800': activeLine !== 1}"
-                class=" w-20 h-2 cursor-pointer"></div>
-            <div (click)="changeBackground(1)"
-                [ngClass]="{'bg-white': activeLine === 2, 'bg-gray-800': activeLine !== 2}"
-                class=" w-20 h-2 cursor-pointer mx-8"></div>
-            <div (click)="changeBackground(2)"
-                [ngClass]="{'bg-white': activeLine === 3, 'bg-gray-800': activeLine !== 3}"
-                class=" w-20 h-2 cursor-pointer mx-8"></div>
-        </div>
-
-    </div>
-
-
-    <div class="px-5 md:px-12 relative md:-mt-14">
-        <div class="block md:flex items-center p-4 border rounded-lg shadow-md bg-white">
-            <div class="">
-                <img src="assets/man.png" alt="keyholder" width="300px" height="300px"
-                    class=" pb-3 md:pb-0 object-cover rounded-lg mr-4">
-            </div>
-
-            <div class="flex-1 pb-3 px-7 py-8">
-
-                <h2 class="text-xl font-semibold mt-5 mb-2">EPISODE 10: LETS TALK ABOUT PERSONAL HOME LOANS</h2>
-
-                <!-- <div class="flex justify-between mt-6">
-                    <div>
-                        <img class="inline px-1" src="assets/icons/backward.png" width="50px" alt="">
-                        <img class="inline px-2" src="assets/icons/play.png" width="50px" alt="">
-                        <img class="inline px-2" src="assets/icons/forward.png" width="50px" alt="">
-                        <img class="inline px-2" src="assets/icons/zero.png" width="50px" alt="">
-                        <img class="inline px-2" src="assets/icons/record-button.png" width="250px" alt="">
-                        <img class="inline pl-1" src="assets/icons/time.png" width="50px" alt="">
-                    </div>
-                    <div>
-                        <img class="inline px-2" src="assets/icons/volume.png" width="50px" alt="">
-                        <img class="inline px-2" src="assets/icons/fast-forward.png" width="50px" alt="">
-                        <img class="inline px-2" src="assets/icons/arrow-down.png" width="50px" alt="">
-                        <img class="inline px-2" src="assets/icons/share.png" width="50px" alt="">
-                    </div>
-                </div> -->
-
-                <div class="flex justify-between mt-6">
-                    <div>
-                        <img class="inline px-1 w-7 md:w-14" src="assets/icons/backward.png" alt="">
-                        <img class="inline px-2 w-8 md:w-14" src="assets/icons/play.png" alt="">
-                        <img class="inline px-2 w-8 md:w-14" src="assets/icons/forward.png" alt="">
-                        <img class="inline px-2 w-8 md:w-14" src="assets/icons/zero.png" alt="">
-                        <img class="inline px-2 w-24 md:w-32" src="assets/icons/record-button.png" alt="">
-                        <img class="inline pl-1 w-8 md:w-14" src="assets/icons/time.png" alt="">
-                    </div>
-                    <div>
-                        <img class="inline px-2 w-8 md:w-14" src="assets/icons/volume.png" alt="">
-                        <img class="inline px-2 w-8 md:w-14" src="assets/icons/fast-forward.png" alt="">
-                        <img class="inline px-2 w-8 md:w-14" src="assets/icons/arrow-down.png" alt="">
-                        <img class="inline px-2 w-8 md:w-14" src="assets/icons/share.png" alt="">
-                    </div>
+        </div> -->
+    
+        <div class="relative container-class h-screen bg-cover bg-center"
+            [style.background-image]="'url(' + backgroundImages[currentIndex] + ')'" (touchstart)="onTouchStart($event)"
+            (touchend)="onTouchEnd($event)">
+            <div class="absolute inset-0 flex items-center justify-start" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false" >
+                <div class="bg-black bg-opacity-50 p-5 text-center md:text-left w-full  md:w-auto">
+                    <p class="text-3xl md:text-4xl font-medium mt-5 text-white">FBN PODCAST</p>
+                    <p class="text-xl text-white md:text-xl pt-5 font-medium">Enjoy amazing discussions about life</p>
+                    <p class="text-xl text-white md:text-xl font-medium">solutions that will transform</p>
+                    <p class="text-xl text-white md:text-xl font-medium">your everyday on the go</p>
                 </div>
-                
+    
+    
             </div>
+    
+            <div class="px-10 text-center w-full lg:px-96 mx-auto flex justify-between mt-72 md:mt-14 absolute top-[300px]">
+                <div (click)="changeBackground(0)"
+                    [ngClass]="{'bg-white': activeLine === 1, 'bg-gray-800': activeLine !== 1}"
+                    class=" w-20 h-2 cursor-pointer"></div>
+                <div (click)="changeBackground(1)"
+                    [ngClass]="{'bg-white': activeLine === 2, 'bg-gray-800': activeLine !== 2}"
+                    class=" w-20 h-2 cursor-pointer mx-8"></div>
+                <div (click)="changeBackground(2)"
+                    [ngClass]="{'bg-white': activeLine === 3, 'bg-gray-800': activeLine !== 3}"
+                    class=" w-20 h-2 cursor-pointer mx-8"></div>
+            </div>
+    
         </div>
-
+    
+    
+        <div class="px-5 md:px-12 relative md:-mt-14">
+            <div class="block md:flex items-center p-4 border rounded-lg shadow-md bg-white">
+                <div class="">
+                    <img src="assets/man.png" alt="keyholder" width="300px" height="300px"
+                        class=" pb-3 md:pb-0 object-cover rounded-lg mr-4">
+                </div>
+    
+                <div class="flex-1 pb-3 px-7 py-8">
+    
+                    <h2 class="text-xl font-semibold mt-5 mb-2">EPISODE 10: LETS TALK ABOUT PERSONAL HOME LOANS</h2>
+    
+                    <!-- <div class="flex justify-between mt-6">
+                        <div>
+                            <img class="inline px-1" src="assets/icons/backward.png" width="50px" alt="">
+                            <img class="inline px-2" src="assets/icons/play.png" width="50px" alt="">
+                            <img class="inline px-2" src="assets/icons/forward.png" width="50px" alt="">
+                            <img class="inline px-2" src="assets/icons/zero.png" width="50px" alt="">
+                            <img class="inline px-2" src="assets/icons/record-button.png" width="250px" alt="">
+                            <img class="inline pl-1" src="assets/icons/time.png" width="50px" alt="">
+                        </div>
+                        <div>
+                            <img class="inline px-2" src="assets/icons/volume.png" width="50px" alt="">
+                            <img class="inline px-2" src="assets/icons/fast-forward.png" width="50px" alt="">
+                            <img class="inline px-2" src="assets/icons/arrow-down.png" width="50px" alt="">
+                            <img class="inline px-2" src="assets/icons/share.png" width="50px" alt="">
+                        </div>
+                    </div> -->
+    
+                    <div class="flex justify-between mt-6">
+                        <div>
+                            <img class="inline px-1 w-7 md:w-14" src="assets/icons/backward.png" alt="">
+                            <img class="inline px-2 w-8 md:w-14" src="assets/icons/play.png" alt="">
+                            <img class="inline px-2 w-8 md:w-14" src="assets/icons/forward.png" alt="">
+                            <img class="inline px-2 w-8 md:w-14" src="assets/icons/zero.png" alt="">
+                            <img class="inline px-2 w-24 md:w-32" src="assets/icons/record-button.png" alt="">
+                            <img class="inline pl-1 w-8 md:w-14" src="assets/icons/time.png" alt="">
+                        </div>
+                        <div>
+                            <img class="inline px-2 w-8 md:w-14" src="assets/icons/volume.png" alt="">
+                            <img class="inline px-2 w-8 md:w-14" src="assets/icons/fast-forward.png" alt="">
+                            <img class="inline px-2 w-8 md:w-14" src="assets/icons/arrow-down.png" alt="">
+                            <img class="inline px-2 w-8 md:w-14" src="assets/icons/share.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+    
+        </div>
+    
+        <div class="px-14 mt-3 md:mt-24 py-10 text-[#003B65] ">
+            <p class="font-medium">PODCAST</p>
+            <p class="text-3xl font-medium">Recent Episodes</p>
+    
+        </div>
+    
+        <app-economic></app-economic>
+        <app-first-monie-card></app-first-monie-card>
+        <app-featured-card></app-featured-card>
+        <app-footer></app-footer>
     </div>
-
-    <div class="px-14 mt-3 md:mt-24 py-10 text-[#003B65] ">
-        <p class="font-medium">PODCAST</p>
-        <p class="text-3xl font-medium">Recent Episodes</p>
-
+</ng-container>
+<ng-template #loader>
+    <div class="bg-transparent">
+      <app-loader></app-loader>
     </div>
-
-    <app-economic></app-economic>
-    <app-first-monie-card></app-first-monie-card>
-    <app-featured-card></app-featured-card>
-    <app-footer></app-footer>
-</div>
+</ng-template>
