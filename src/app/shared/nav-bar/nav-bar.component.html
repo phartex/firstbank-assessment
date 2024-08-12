@@ -35,7 +35,7 @@
                 <input class="hidden" type="checkbox" />
             </ng-container>
             <ng-template #hideHamBurger>
-                <div class="fill-current">
+                <div class="fill-current md:hidden">
                     <img src="assets/close1.svg" alt="">
                     <input class="hidden" type="checkbox" />
                 </div>
@@ -70,11 +70,12 @@
 
         </div>
 
-        <div class="lg:flex lg:items-center lg:w-auto w-full" *ngIf="show">
+        <!-- <div class="lg:flex lg:items-center lg:w-auto w-full" *ngIf="show"> -->
+        <div class="flex items-center w-full md:hidden" *ngIf="show">
             <nav class="">
                 <ul class="lg:flex items-center justify-between text-base pt-4 lg:pt-0">
                     <li class="cursor-pointer"><a routerLink="/home" routerLinkActive="active-link"
-                            class="nav-link lg:p-4 py-3 px-2 block border-b-2 border-transparent   "><span>Home</span></a>
+                            class="nav-link lg:p-4 py-3 px-2 block border-b-2 border-transparent   "><span>Home small</span></a>
                     </li>
                     <li class="cursor-pointer"><a routerLink="/personal" routerLinkActive="active-link"
                             class="nav-link lg:p-4 py-3 px-2 block border-b-2 border-transparent  "><span>PERSONAL</span></a>
