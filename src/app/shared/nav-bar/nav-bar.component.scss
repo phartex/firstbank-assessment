@@ -6,16 +6,22 @@
     z-index: 80;
 }
 
-.active-link span {
-    color: #003B65 ;
-    background-color: #fff;
-    padding: 0.5em;
+.active-link {
+    background-color: #ffffff; 
+    color: #083d77; 
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem; 
 }
-
 a:hover {
     background-color: #fff;
     color: #003B65 ;
-    padding: 0.5em;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 0px 5px;
 }
 
 .nav-active-white {
